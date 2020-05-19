@@ -25,7 +25,7 @@ Fast forward a couple months (first commits in the git repo indicate May of 2015
 
 After I graduated, I got a job as a front-end developer working mostly in **React**, **Angular 2+** and **Node.js**, but that didn't stop my attempts at game development. I participated in GGJ 2017 and 2018 with some other friends and while none of the games we've created made it to Steam, I've learned a lot about developing projects in **Unity**. That led to a project called **Super Rumble** that was a simple tech demo I made with my friend (more on that later).
 
-And now, I started working on **Project Labrador**, my magnum opus - an RPG in **Unity** and **C#**. There were many times I felt overwhelmed with stuff I have to create for it, but I kept going. It's my dream game after all, isn't it?
+And now, I started working on **Project Labrador** - an isometric RPG in **Unity** and **C#**. Sometimes getting things done overwhelms me (mostly because of badly designed parts of the code that make me want to shoot myself while adding new features), but I try to keep going regularly - with shorter or longer breaks just to not go insane, as there's no deadline for me after all.
 
 And that's my story. Somehow I became a game developer that works on his solo project a lot. But I've talked enough - more details about the project and my thoughts on different technology-related topics will be coming soon. I hope you liked what I've written - be sure to check my blog regularly. 
 
