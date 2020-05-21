@@ -7,7 +7,7 @@ tags:
 ---
 Hi folks, since I've decided to take a short break from developing **Project Labrador** (at times I already felt burnt out, so it's better to relax for a bit and rethink stuff all over again), it's a perfect opportunity to tell you a little bit about the project.
 
-Like I mentioned in the {% link Introduction <%- full_url_for('/2020/03/15/introduction/') %> %}, project was born on **July 26th 2019**. I was at work, waiting for a new project (which came just days after) and began to think: if Unity is scene-based, with no central data storage or manager, how do you keep track of entities and their data between scenes and also how to make it easy to save to a file and load it later? The answer came to me after a short research. Since I never did or had to implement such a system, I started to work on a prototype. I was excited. I finished it in 2 or 3 days.
+Like I mentioned in the {% post_link introduction Introduction %}, project was born on **July 26th 2019**. I was at work, waiting for a new project (which came just days after) and began to think: if Unity is scene-based, with no central data storage or manager, how do you keep track of entities and their data between scenes and also how to make it easy to save to a file and load it later? The answer came to me after a short research. Since I never did or had to implement such a system, I started to work on a prototype. I was excited. I finished it in 2 or 3 days.
 
 Here's how it works (please note that this is just my naive approach that seems to be working fine in my case. It has it's quirks and pitfalls that you have to be aware of!):
 
