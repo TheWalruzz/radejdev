@@ -74,18 +74,24 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/05/21/project-labrador/">Project Labrador - Data Persistence</a></h2>
-            </div>
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">Project Labrador - Data Persistence</h2>
             <div class="post-meta">
                 <span class="post-time">2020-05-21</span>
                 
+                <!-- <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span> -->
             </div>
-            <div class="post-content">
-                
-                    <p>Hi folks, since I’ve decided to take a short break from developing <strong>Project Labrador</strong> (at times I already felt burnt out, so it’s better to relax for a bit and rethink stuff all over again), it’s a perfect opportunity to tell you a little bit about the project.</p>
+        </div>
+        <!-- <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div> -->
+        <div class="post-content">
+            <p>Hi folks, since I’ve decided to take a short break from developing <strong>Project Labrador</strong> (at times I already felt burnt out, so it’s better to relax for a bit and rethink stuff all over again), it’s a perfect opportunity to tell you a little bit about the project.</p>
 <p>Like I mentioned in the <a href="" title="" target="">Introduction &lt;%- full_url_for(&#x2F;2020&#x2F;03&#x2F;15&#x2F;introduction&#x2F;) %&gt;</a>, project was born on <strong>July 26th 2019</strong>. I was at work, waiting for a new project (which came just days after) and began to think: if Unity is scene-based, with no central data storage or manager, how do you keep track of entities and their data between scenes and also how to make it easy to save to a file and load it later? The answer came to me after a short research. Since I never did or had to implement such a system, I started to work on a prototype. I was excited. I finished it in 2 or 3 days.</p>
 <p>Here’s how it works (please note that this is just my naive approach that seems to be working fine in my case. It has it’s quirks and pitfalls that you have to be aware of!):</p>
 <ul>
@@ -101,48 +107,31 @@
 <p>Of course, this limits some options when it comes to creating scenes: entity instances live in a specific scene and cannot just leave it. They’re basically stuck, unless I simulate them going into other location and create an entity with their id in the other scene. For this purpose I had to create utility components that show/hide entities based on some conditions. Pretty hacky and limiting, but it should be okay for my purposes. I don’t expect to be doing that kind of stuff often anyway. Just keep it simple and it’ll work. I hope so at least.</p>
 <p>Okay, that’s about it. This is just a tip of the iceberg that is my RPG framework. Let’s just hope I won’t crash into it in the long run 😉. Bye for now!</p>
 
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/2020/03/15/introduction/">Introduction</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2020-03-15</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>Hello, my name is Paweł and I’m a front-end developer in one of many big IT consulting corporations. But after hours I chase my dream of making games. Let me tell you about my pet projects a little bit more.</p>
-<p>Way back in time I was a Computer Science student at Poznań University of Technology, where I met Sebastian Krzyszkowiak (also known as <strong>dos</strong>, check him out at <a href="http://dosowisko.net/" title="" target="">dosowisko.net</a>) who was also into gamedev and wanted to participate in Global Game Jam 2015. So we went there and in a period of 48 hours we created <strong>The Secret of Tremendous Corporation</strong> (check it out on <a href="https://store.steampowered.com/app/380140/The_Secret_of_Tremendous_Corporation/" title="" target="">Steam</a>). Making an adventure game on a game jam seemed like a strange idea, but we did it anyway (the whole process of making it is a topic for another post). We downloaded an open-source adventure game engine called <strong>SLUDGE</strong> and just started working. I wrote most of the plot, dialogues and much of the code. And after stressful two days of work it was time to show it to the public. Even though we didn’t win any prizes (we landed at the second-to-last place), it felt good. We were fully fledged game developers. After the game jam, Sebastian took it upon himself to finish the game and try to make it to Steam. After a successful Steam Greenlight campaign it was time for final fixes and release. We had a game on Steam!</p>
-<p>Fast forward a couple months (first commits in the git repo indicate May of 2015, but I’m pretty sure it was started some time before that), I’ve created a vaporwave-themed jumper-platformer called <strong>私を買う: Trouble At Virtual Plaza</strong> that was fully functional and working, but lacked actual content due to my <strong>really</strong> poor GFX skills and lack of motivation. The game itself used <strong>Phaser</strong> and <strong>TypeScript</strong> and it introduced me to the wonderful world of HTML5 and modern Web.</p>
-<img src="/2020/03/15/introduction/tavp_01.png" class="">
-
-
-<img src="/2020/03/15/introduction/tavp_02.png" class="">
-
-
-<img src="/2020/03/15/introduction/tavp_03.png" class="">
-
-<p>After I graduated, I got a job as a front-end developer working mostly in <strong>React</strong>, <strong>Angular 2+</strong> and <strong>Node.js</strong>, but that didn’t stop my attempts at game development. I participated in GGJ 2017 and 2018 with some other friends and while none of the games we’ve created made it to Steam, I’ve learned a lot about developing projects in <strong>Unity</strong>. That led to a project called <strong>Super Rumble</strong> that was a simple tech demo I made with my friend (more on that later).</p>
-<p>On <strong>July 26th 2019</strong> I started working on a next project - an isometric RPG inspired by first two Fallout games, but set in a post-apocalyptic sci-fi world codenamed <strong>Project Labrador</strong>. It’s all made in in <strong>Unity</strong> and <strong>C#</strong>. Sometimes getting things done overwhelms me (mostly because of badly designed parts of the code that make me want to shoot myself while adding new features), but I try to keep going regularly - with shorter or longer breaks just to not go insane, as there’s no deadline for me after all. However the scope keeps growing and growing…</p>
-<p>And that’s my story. Somehow I became a game developer that works on his solo project a lot. But I’ve talked enough - more details about the project and my thoughts on different technology-related topics will be coming soon. I hope you liked what I’ve written - be sure to check my blog regularly. </p>
-<p>Bye for now!</p>
-
-                
-            </div>
-        </article>
-    
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/project-labrador/" title="project-labrador">project-labrador</a>
+            
+            <a class="tag" href="/tags/gamedev/" title="gamedev">gamedev</a>
+            
+        </div>
+        
+    </article>
 </div>
 <div class="paginator">
     
         
         
+            <a class="next" href="/2020/03/15/introduction/">
+                <span class="nav-default">Introduction</span>
+                <span class="nav-mobile">Next</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
     
 </div>
-
+<div id="comment-container"></div>
     </div>
 </div>
 <footer class="footer-social">
